@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from './Button';
+import Bubble from './Bubble';
 
 import './App.css';
 
@@ -8,7 +9,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="background-image" />
-        <Button></Button>
+        <Button />
+        <Bubble />
       </div>
     );
   }
