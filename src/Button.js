@@ -36,6 +36,7 @@ const Button = styled.button`
       vertical-align: -100%;
       transition: 0.7s;
 
+
       display: flex;
       align-items: center;
       justify-content: center;
