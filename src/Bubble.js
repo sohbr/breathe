@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Bubble.css';
 
 let notchSize = 3.5;
 
@@ -32,17 +33,17 @@ class Bubble extends Component {
   render () {
     return (
       <svg height="500" width="500">
-        <path id="circlePath" d={`M${x1},${y1} A130,130 0 0,1 ${x2},${y2}`}
+        <path d={`M${x1},${y1} A130,130 0 0,1 ${x2},${y2}`}
           fill="none" stroke="rgb(237, 237, 237)" strokeWidth="3" />
-        <path id="circlePath" d={`M${x2},${y2} A130,130 0 0,1 ${x3},${y3}`}
+        <path d={`M${x2},${y2} A130,130 0 0,1 ${x3},${y3}`}
           fill="none" stroke="rgb(107, 177, 224)" strokeWidth="3" />
-        <path id="circlePath" d={`M${x3},${y3} A130,130 0 0,1 ${x4},${y4}`}
+        <path d={`M${x3},${y3} A130,130 0 0,1 ${x4},${y4}`}
           fill="none" stroke="rgb(237, 237, 237)" strokeWidth="3" />
-        <path id="circlePath" d={`M${x4},${y4} A130,130 0 0,1 ${x5},${y5}`}
+        <path d={`M${x4},${y4} A130,130 0 0,1 ${x5},${y5}`}
           fill="none" stroke="rgb(204, 204, 204)" strokeWidth="3" />
-        <path id="circlePath" d={`M${x5},${y5} A130,130 0 0,1 ${x6},${y6}`}
+        <path d={`M${x5},${y5} A130,130 0 0,1 ${x6},${y6}`}
           fill="none" stroke="rgb(237, 237, 237)" strokeWidth="3" />
-        <path id="circlePath" d={`M${x6},${y6} A130,130 0 0,1 ${x1},${y1}`}
+        <path d={`M${x6},${y6} A130,130 0 0,1 ${x1},${y1}`}
           fill="none" stroke="rgb(188, 107, 224)" strokeWidth="3" />
 
         <path d={`M${x1},${y1} A1,1, 0 0,0 ${x2},${y2}`}
@@ -52,7 +53,13 @@ class Bubble extends Component {
         <path d={`M${x5},${y5} A1,1, 0 0,0 ${x6},${y6}`}
           fill="rgb(237,237,237)" stroke="rgb(237,237,237)" strokeWidth="0.1" />
 
-        <circle cx="250" cy="250" r="115" stroke="rgb(182, 169, 242)" fill="rgb(182, 169, 242)">
+        <path id="circle" d={`M${x1},${y1} A1,1, 0 0,0 ${x2},${y2}`}
+          fill="red" stroke="rgb(237,237,237)" strokeWidth="0.1" />
+
+        <div></div>
+
+        <circle cx="250" cy="250" r="115" stroke="rgb(182, 169, 242)"
+          fill="rgb(182, 169, 242)">
           <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
           </animateMotion>
         </circle>
