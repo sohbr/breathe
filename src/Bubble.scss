@@ -1,5 +1,29 @@
-.circle {
-  transform-origin: 200%;
-  position: relative;
-  animation: rotate 5s linear infinite;
+.orbit {
+  position: absolute;
+  transform-origin: 250px 250px;
+  animation: orbit 8s linear infinite;
+}
+
+@keyframes orbit {
+  0% {
+    transform: scale(1.0) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(180deg);
+  }
+  100% {
+    transform: scale(1.0) rotate(360deg);
+   }
+}
+
+.grow {
+  position: absolute;
+  transform-origin: 250px 250px;
+  animation: grow 8s linear infinite;
+}
+
+@keyframes grow {
+  0% { transform: scale(1.0); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1.0); }
 }
