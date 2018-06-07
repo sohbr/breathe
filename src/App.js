@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Button from './Button';
-import Bubble from './Bubble.js';
+import BubbleThree from './BubbleThree.js';
 
 import './App.css';
 
@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
         <div className="background-image" />
         <Button />
-        <Bubble />
+        <BubbleThree />
       </div>
     );
   }
