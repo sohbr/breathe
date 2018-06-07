@@ -20,26 +20,56 @@
   position: absolute;
   transform-origin: 250px 250px;
   animation: grow 10s linear infinite;
-  font-family: "arial";
-  font-size: 25px;
-  content: "hello";
 }
 
 @keyframes grow {
-  0% { transform: scale(1.0); }
   41% { transform: scale(1.1); }
   58% { transform: scale(1.1); }
-  100% { transform: scale(1.0); }
 }
 
-.command {
+.command1 {
   font-family: "arial";
   font-size: 25px;
+  position: absolute;
+  transform-origin: 250px 250px;
+  animation: command1 10s linear infinite;
 }
 
-@keyframes command {
-  0% { text: "a"; }
-  41% { color: white; }
-  58% { color: white; }
-  100% { text: "B"}
+@keyframes command1 {
+  0% { opacity: 1; }
+  41% { opacity: 1; transform: scale(1.1);}
+  42% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.command2 {
+  font-family: "arial";
+  font-size: 25px;
+  position: absolute;
+  transform-origin: 250px 250px;
+  animation: command2 10s linear infinite;
+}
+
+@keyframes command2 {
+  0% { opacity: 0; }
+  41% { opacity: 0; transform: scale(1.1); }
+  42% { opacity: 1; }
+  57% { opacity: 1; transform: scale(1.1); }
+  58% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.command3 {
+  font-family: "arial";
+  font-size: 25px;
+  position: absolute;
+  transform-origin: 250px 250px;
+  animation: command3 10s linear infinite;
+}
+
+@keyframes command3 {
+  0% { opacity: 0; }
+  57% { opacity: 0; }
+  58% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 1; }
 }

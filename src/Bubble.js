@@ -63,8 +63,12 @@ class Bubble extends Component {
             stroke="rgb(182, 169, 242)" fill="rgb(182, 169, 242)">
           </circle>
 
-          <text className="grow" x="50%" y="50%" dy="20"
+          <text className="command1" x="50%" y="50%" dy="10"
             text-anchor="middle" fill="rgb(237,237,237)">breathe in</text>
+          <text className="command2" x="50%" y="50%" dy="10"
+            text-anchor="middle" fill="rgb(237,237,237)">hold</text>
+          <text className="command3" x="50%" y="50%" dy="10"
+            text-anchor="middle" fill="rgb(237,237,237)">breathe out</text>
 
 
         </svg>
@@ -77,9 +81,3 @@ class Bubble extends Component {
 }
 
 export default Bubble;
-
-
-// <text className="grow" x="50%" y="50%" dy="20"
-//   text-anchor="middle" fill="rgb(237,237,237)">hold</text>
-// <text className="grow" x="50%" y="50%" dy="20"
-//   text-anchor="middle" fill="rgb(237,237,237)">breathe out</text>
