@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Button from './Button';
-import Bubble from './Bubble';
+import Bubble from './Bubble.jsx';
 
 import './App.css';
 

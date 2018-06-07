@@ -1,29 +1,45 @@
+.svgContainer {
+  height: 500px;
+  width: 500px;
+}
+
 .orbit {
   position: absolute;
   transform-origin: 250px 250px;
-  animation: orbit 8s linear infinite;
+  animation: orbit 10s linear infinite;
 }
 
 @keyframes orbit {
-  0% {
-    transform: scale(1.0) rotate(0deg);
-  }
-  50% {
-    transform: scale(1.1) rotate(180deg);
-  }
-  100% {
-    transform: scale(1.0) rotate(360deg);
-   }
+  0% { transform: scale(1.0) rotate(0deg); }
+  41% { transform: scale(1.1) rotate(150deg); }
+  58% { transform: scale(1.1) rotate(210deg); }
+  100% { transform: scale(1.0) rotate(360deg); }
 }
 
 .grow {
   position: absolute;
   transform-origin: 250px 250px;
-  animation: grow 8s linear infinite;
+  animation: grow 10s linear infinite;
+  font-family: "arial";
+  font-size: 25px;
+  content: "hello";
 }
 
 @keyframes grow {
   0% { transform: scale(1.0); }
-  50% { transform: scale(1.1); }
+  41% { transform: scale(1.1); }
+  58% { transform: scale(1.1); }
   100% { transform: scale(1.0); }
+}
+
+.command {
+  font-family: "arial";
+  font-size: 25px;
+}
+
+@keyframes command {
+  0% { text: "a"; }
+  41% { color: white; }
+  58% { color: white; }
+  100% { text: "B"}
 }
