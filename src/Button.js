@@ -18,7 +18,7 @@ const Button = styled.button`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transition: 0.2s;
+  transition: 0.5s;
 
   &:hover {
     border: 2px solid #ededed;
@@ -34,8 +34,7 @@ const Button = styled.button`
       left: 5px;
       top: 4.5px;
       vertical-align: -100%;
-      transition: 0.7s;
-
+      transition: 0.5s;
 
       display: flex;
       align-items: center;
@@ -54,7 +53,7 @@ const Button = styled.button`
     position: absolute;
     left: 5px;
     top: 4.5px;
-    transition: 0.7s;
+    transition: 0.5s;
 
     display: flex;
     align-items: center;

@@ -1,62 +1,63 @@
-:root {
-  --ani-duration: 10s;
-}
 
 .svgContainer {
   height: 500px;
   width: 500px;
 }
 
-.orbit {
+.secondOrbit {
   position: absolute;
   transform-origin: 250px 250px;
-  animation: orbit linear infinite;
+  animation: secondOrbit linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes orbit {
+@keyframes secondOrbit {
   0% { transform: scale(1.0) rotate(0deg); }
   50% { transform: scale(1.1) rotate(180deg); }
   100% { transform: scale(1.0) rotate(360deg); }
 }
 
-.grow {
+.secondGrow {
   position: absolute;
   transform-origin: 250px 250px;
-  animation: grow linear infinite;
+  animation: secondGrow linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes grow {
+@keyframes secondGrow {
   50% { transform: scale(1.1); }
 }
 
-.breatheIn {
+.secondBreatheIn {
   font-family: "arial";
   font-size: 25px;
   position: absolute;
   transform-origin: 250px 250px;
-  animation: breatheIn linear infinite;
+  animation: secondBreatheIn linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes breatheIn {
+@keyframes secondBreatheIn {
   0% { opacity: 1; }
   50% { opacity: 1; transform: scale(1.1);}
   51% { opacity: 0; }
   100% { opacity: 0; }
 }
 
-.breatheOut {
+.secondBreatheOut {
   font-family: "arial";
   font-size: 25px;
   position: absolute;
   transform-origin: 250px 250px;
-  animation: breatheOut linear infinite;
+  animation: secondBreatheOut linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes breatheOut {
+@keyframes secondBreatheOut {
   0% { opacity: 0; }
   50% { opacity: 0; }
   51% { opacity: 1; transform: scale(1.1); }

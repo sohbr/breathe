@@ -1,5 +1,6 @@
 :root {
-  --ani-duration: 10s;
+  --ani-duration: 5s;
+  --ani-play: running;
 }
 
 .svgContainer {
@@ -7,58 +8,65 @@
   width: 500px;
 }
 
-.orbit {
+.firstOrbit {
   position: absolute;
   transform-origin: 250px 250px;
-  animation: orbit linear infinite;
+  animation: firstOrbit linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes orbit {
+@keyframes firstOrbit {
   0% { transform: scale(1.0) rotate(0deg); }
   41% { transform: scale(1.1) rotate(150deg); }
   58% { transform: scale(1.1) rotate(210deg); }
   100% { transform: scale(1.0) rotate(360deg); }
 }
 
-.grow {
+.firstGrow {
   position: absolute;
   transform-origin: 250px 250px;
-  animation: grow linear infinite;
+  animation: firstGrow linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes grow {
+@keyframes firstGrow {
+  0% { transform: scale(1.0); }
   41% { transform: scale(1.1); }
   58% { transform: scale(1.1); }
+  100% { transform: scale(1.0); }
+
 }
 
-.command1 {
+.firstBreatheIn {
   font-family: "arial";
   font-size: 25px;
   position: absolute;
   transform-origin: 250px 250px;
-  animation: command1 linear infinite;
+  animation: firstBreatheIn linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes command1 {
+@keyframes firstBreatheIn {
   0% { opacity: 1; }
   41% { opacity: 1; transform: scale(1.1);}
   42% { opacity: 0; }
   100% { opacity: 0; }
 }
 
-.command2 {
+.firstHold {
   font-family: "arial";
   font-size: 25px;
   position: absolute;
   transform-origin: 250px 250px;
-  animation: command2 linear infinite;
+  animation: firstHold linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes command2 {
+@keyframes firstHold {
   0% { opacity: 0; }
   41% { opacity: 0; transform: scale(1.1); }
   42% { opacity: 1; }
@@ -67,16 +75,17 @@
   100% { opacity: 0; }
 }
 
-.command3 {
+.firstBreatheOut {
   font-family: "arial";
   font-size: 25px;
   position: absolute;
   transform-origin: 250px 250px;
-  animation: command3 linear infinite;
+  animation: firstBreatheOut linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes command3 {
+@keyframes firstBreatheOut {
   0% { opacity: 0; }
   57% { opacity: 0; }
   58% { opacity: 1; transform: scale(1.1); }

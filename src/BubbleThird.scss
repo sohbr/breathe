@@ -1,20 +1,18 @@
-:root {
-  --ani-duration: 10s;
-}
 
 .svgContainer {
   height: 500px;
   width: 500px;
 }
 
-.orbit {
+.thirdOrbit {
   position: absolute;
   transform-origin: 250px 250px;
-  animation: orbit linear infinite;
+  animation: thirdOrbit linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes orbit {
+@keyframes thirdOrbit {
   0% { transform: scale(1.0) rotate(0deg); }
   25% { transform: scale(1.1) rotate(90deg); }
   50% { transform: scale(1.1) rotate(180deg); }
@@ -22,14 +20,15 @@
   100% { transform: scale(1.0) rotate(360deg); }
 }
 
-.grow {
+.thirdGrow {
   position: absolute;
   transform-origin: 250px 250px;
-  animation: grow linear infinite;
+  animation: thirdGrow linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes grow {
+@keyframes thirdGrow {
   0% { transform: scale(1.0); }
   25% { transform: scale(1.1); }
   50% { transform: scale(1.1); }
@@ -37,32 +36,34 @@
   100% { transform: scale(1.0); }
 }
 
-.breatheIn {
+.thirdBreatheIn {
   font-family: "arial";
   font-size: 25px;
   position: absolute;
   transform-origin: 250px 250px;
-  animation: breatheIn linear infinite;
+  animation: thirdBreatheIn linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes breatheIn {
+@keyframes thirdBreatheIn {
   0% { opacity: 1; }
   25% { opacity: 1; transform: scale(1.1);}
   26% { opacity: 0; }
   100% { opacity: 0; }
 }
 
-.hold {
+.thirdHold {
   font-family: "arial";
   font-size: 25px;
   position: absolute;
   transform-origin: 250px 250px;
-  animation: hold linear infinite;
+  animation: thirdHold linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes hold {
+@keyframes thirdHold {
   0% { opacity: 0; }
   25% { opacity: 0; transform: scale(1.1); }
   26% { opacity: 1; }
@@ -73,16 +74,17 @@
   100% { opacity: 1; }
 }
 
-.breatheOut {
+.thirdBreatheOut {
   font-family: "arial";
   font-size: 25px;
   position: absolute;
   transform-origin: 250px 250px;
-  animation: breatheOut linear infinite;
+  animation: thirdBreatheOut linear infinite;
   animation-duration: var(--ani-duration);
+  animation-play-state: var(--ani-play);
 }
 
-@keyframes breatheOut {
+@keyframes thirdBreatheOut {
   0% { opacity: 0; }
   50% { opacity: 0; transform: scale(1.1); }
   51% { opacity: 1; }

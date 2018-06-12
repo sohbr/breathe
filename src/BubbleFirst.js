@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Bubble.css';
+import './BubbleFirst.css';
 
 let notchSize = 3;
 
@@ -28,46 +28,46 @@ let y6 = 250 + y3temp;
 
 
 
-class Bubble extends Component {
+class BubbleFirst extends Component {
 
   render () {
     return (
       <div className="svgContainer">
         <svg height="500" width="500">
-          <path className="grow" d={`M${x1},${y1} A130,130 0 0,1 ${x2},${y2}`}
+          <path className="firstGrow" d={`M${x1},${y1} A130,130 0 0,1 ${x2},${y2}`}
             fill="none" stroke="rgb(237, 237, 237)" strokeWidth="3" />
-          <path className="grow" d={`M${x2},${y2} A130,130 0 0,1 ${x3},${y3}`}
+          <path className="firstGrow" d={`M${x2},${y2} A130,130 0 0,1 ${x3},${y3}`}
             fill="none" stroke="rgb(107, 177, 224)" strokeWidth="3" />
-          <path className="grow" d={`M${x3},${y3} A130,130 0 0,1 ${x4},${y4}`}
+          <path className="firstGrow" d={`M${x3},${y3} A130,130 0 0,1 ${x4},${y4}`}
             fill="none" stroke="rgb(237, 237, 237)" strokeWidth="3" />
-          <path className="grow" d={`M${x4},${y4} A130,130 0 0,1 ${x5},${y5}`}
+          <path className="firstGrow" d={`M${x4},${y4} A130,130 0 0,1 ${x5},${y5}`}
             fill="none" stroke="rgb(204, 204, 204)" strokeWidth="3" />
-          <path className="grow" d={`M${x5},${y5} A130,130 0 0,1 ${x6},${y6}`}
+          <path className="firstGrow" d={`M${x5},${y5} A130,130 0 0,1 ${x6},${y6}`}
             fill="none" stroke="rgb(237, 237, 237)" strokeWidth="3" />
-          <path className="grow" d={`M${x6},${y6} A130,130 0 0,1 ${x1},${y1}`}
+          <path className="firstGrow" d={`M${x6},${y6} A130,130 0 0,1 ${x1},${y1}`}
             fill="none" stroke="rgb(188, 107, 224)" strokeWidth="3" />
 
-          <path className="grow" d={`M${x1},${y1} A1,1, 0 0,0 ${x2},${y2}`}
+          <path className="firstGrow" d={`M${x1},${y1} A1,1, 0 0,0 ${x2},${y2}`}
             fill="rgb(237,237,237)" stroke="rgb(237,237,237)" strokeWidth="0.1" />
-          <path className="grow" d={`M${x3},${y3} A1,1, 0 0,0 ${x4},${y4}`}
+          <path className="firstGrow" d={`M${x3},${y3} A1,1, 0 0,0 ${x4},${y4}`}
             fill="rgb(237,237,237)" stroke="rgb(237,237,237)" strokeWidth="0.1" />
-          <path className="grow" d={`M${x5},${y5} A1,1, 0 0,0 ${x6},${y6}`}
+          <path className="firstGrow" d={`M${x5},${y5} A1,1, 0 0,0 ${x6},${y6}`}
             fill="rgb(237,237,237)" stroke="rgb(237,237,237)" strokeWidth="0.1" />
 
-          <path className="orbit"  d={`M${x1},${y1} A1,1, 0 0,0 ${x2},${y2}`}
+          <path className="firstOrbit"  d={`M${x1},${y1} A1,1, 0 0,0 ${x2},${y2}`}
             fill="rgb(107, 177, 224)" stroke="rgb(107, 177, 224)" strokeWidth="0.1" />
-          <path className="orbit" d={`M${x1},${y1} A130,130 0 0,1 ${x2},${y2}`}
+          <path className="firstOrbit" d={`M${x1},${y1} A130,130 0 0,1 ${x2},${y2}`}
             fill="none" stroke="rgb(107, 177, 224)" strokeWidth="3" />
 
-          <circle className="grow" cx="250" cy="250" r="115"
+          <circle className="firstGrow" cx="250" cy="250" r="115"
             stroke="rgb(182, 169, 242)" fill="rgb(182, 169, 242)">
           </circle>
 
-          <text className="command1" x="50%" y="50%" dy="10"
+          <text className="firstBreatheIn" x="50%" y="50%" dy="10"
             text-anchor="middle" fill="rgb(237,237,237)" >breathe in</text>
-          <text className="command2" x="50%" y="50%" dy="10"
+          <text className="firstHold" x="50%" y="50%" dy="10"
             text-anchor="middle" fill="rgb(237,237,237)" >hold</text>
-          <text className="command3" x="50%" y="50%" dy="10"
+          <text className="firstBreatheOut" x="50%" y="50%" dy="10"
             text-anchor="middle" fill="rgb(237,237,237)" >breathe out</text>
 
 
@@ -80,4 +80,4 @@ class Bubble extends Component {
 
 }
 
-export default Bubble;
+export default BubbleFirst;
