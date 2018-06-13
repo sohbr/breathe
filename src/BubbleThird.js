@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import './BubbleThird.css';
 
 let notchSize = 3;
@@ -74,9 +75,16 @@ class BubbleThird extends Component {
           <text className="thirdBreatheOut" x="50%" y="50%" dy="10"
             text-anchor="middle" fill="rgb(237,237,237)" >breathe out</text>
 
-
         </svg>
 
+        <Helmet>
+          <style>{`
+            :root {
+              --ani-play: ${this.props.playstate};
+            }`}
+          </style>
+        </Helmet>
+        
       </div>
 
     );

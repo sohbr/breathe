@@ -36,6 +36,9 @@ class App extends Component {
         <BubbleFirst playstate={this.state.playstate} />
         <Button onClick={this.handlePlay} />
         <Button onClick={this.handlePause} />
+        <button>
+          <i className="fa fa-play" aria-hidden="true">hello</i>
+        </button>
       </div>
     );
   }
