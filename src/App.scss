@@ -10,15 +10,25 @@
   position: fixed;
   top: 0;
   left: 0;
-  // background-image: url('./assets/images/andrew-coelho-60428-unsplash.jpg');
+  background-image: url('./assets/images/waranont-wichittranont-409275-unsplash.jpg');
   background-color: white;
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  filter: blur(0px);
+  filter: blur(5px);
   z-index: -2;
 }
 
-.fa-play {
-  color: black;
+.fa {
+  color: rgb(237, 237, 237);
+  display: inline-block;
+  border-radius: 60px;
+  border: 2px solid rgb(237, 237, 237);
+  padding: 15px 18px 15px 18px;
+  transition: 0.7s;
+
+  &:hover {
+    border: 2px solid rgb(182, 169, 242);
+    color: rgb(182, 169, 242);
+  }
 }

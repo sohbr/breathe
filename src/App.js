@@ -5,28 +5,29 @@ import BubbleSecond from './BubbleSecond.js';
 import BubbleThird from './BubbleThird.js';
 
 import './App.css';
+var FontAwesome = require('react-fontawesome');
 
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      playstate: "running"
+      playstate: "running",
+      fontawesome: "fa-pause"
     };
 
-    this.handlePlay = this.handlePlay.bind(this);
-    this.handlePause = this.handlePause.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handlePause(e) {
+  handleClick(e) {
     e.preventDefault();
-    this.setState({ playstate: "paused" });
+    if (this.state.playstate === "running") {
+      this.setState({ playstate: "paused", fontawesome: "fa-play" });
+    } else {
+      this.setState({ playstate: "running", fontawesome: "fa-pause" });
+    }
   }
 
-  handlePlay(e) {
-    e.preventDefault();
-    this.setState({ playstate: "running" });
-  }
 
   render() {
     return (
@@ -34,11 +35,9 @@ class App extends Component {
         <div className="background-image" />
 
         <BubbleFirst playstate={this.state.playstate} />
-        <Button onClick={this.handlePlay} />
-        <Button onClick={this.handlePause} />
-        <button>
-          <i className="fa fa-play" aria-hidden="true">hello</i>
-        </button>
+        <FontAwesome className={this.state.fontawesome} size='2x'
+          onClick={this.handleClick} />
+
       </div>
     );
   }

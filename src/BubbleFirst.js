@@ -65,11 +65,11 @@ class BubbleFirst extends Component {
           </circle>
 
           <text className="firstBreatheIn" x="50%" y="50%" dy="10"
-            text-anchor="middle" fill="rgb(237,237,237)" >breathe in</text>
+            textAnchor="middle" fill="rgb(237,237,237)" >breathe in</text>
           <text className="firstHold" x="50%" y="50%" dy="10"
-            text-anchor="middle" fill="rgb(237,237,237)" >hold</text>
+            textAnchor="middle" fill="rgb(237,237,237)" >hold</text>
           <text className="firstBreatheOut" x="50%" y="50%" dy="10"
-            text-anchor="middle" fill="rgb(237,237,237)" >breathe out</text>
+            textAnchor="middle" fill="rgb(237,237,237)" >breathe out</text>
 
         </svg>
 

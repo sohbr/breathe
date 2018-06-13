@@ -49,9 +49,9 @@ class BubbleSecond extends Component {
           </circle>
 
           <text className="secondBreatheIn" x="50%" y="50%" dy="10"
-            text-anchor="middle" fill="rgb(237,237,237)" >breathe in</text>
+            textAnchor="middle" fill="rgb(237,237,237)" >breathe in</text>
           <text className="secondBreatheOut" x="50%" y="50%" dy="10"
-            text-anchor="middle" fill="rgb(237,237,237)" >breathe out</text>
+            textAnchor="middle" fill="rgb(237,237,237)" >breathe out</text>
 
         </svg>
 

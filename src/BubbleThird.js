@@ -69,11 +69,11 @@ class BubbleThird extends Component {
           </circle>
 
           <text className="thirdBreatheIn" x="50%" y="50%" dy="10"
-            text-anchor="middle" fill="rgb(237,237,237)" >breathe in</text>
+            textAnchor="middle" fill="rgb(237,237,237)" >breathe in</text>
           <text className="thirdHold" x="50%" y="50%" dy="10"
-            text-anchor="middle" fill="rgb(237,237,237)" >hold</text>
+            textAnchor="middle" fill="rgb(237,237,237)" >hold</text>
           <text className="thirdBreatheOut" x="50%" y="50%" dy="10"
-            text-anchor="middle" fill="rgb(237,237,237)" >breathe out</text>
+            textAnchor="middle" fill="rgb(237,237,237)" >breathe out</text>
 
         </svg>
 
@@ -84,7 +84,7 @@ class BubbleThird extends Component {
             }`}
           </style>
         </Helmet>
-        
+
       </div>
 
     );
