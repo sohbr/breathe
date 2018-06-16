@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Button from './Button';
+import Stopwatch from './Stopwatch';
 import BubbleFirst from './BubbleFirst.js';
 import BubbleSecond from './BubbleSecond.js';
 import BubbleThird from './BubbleThird.js';
-
+import FontAwesome from 'react-fontawesome';
 import './App.css';
-var FontAwesome = require('react-fontawesome');
 
 class App extends Component {
   constructor(props) {
@@ -18,6 +18,7 @@ class App extends Component {
 
     this.handleClick = this.handleClick.bind(this);
   }
+
 
   handleClick(e) {
     e.preventDefault();
@@ -33,7 +34,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="background-image" />
-
+        <Stopwatch playstate={this.state.playstate}/>
         <BubbleFirst playstate={this.state.playstate} />
         <FontAwesome className={this.state.fontawesome} size='2x'
           onClick={this.handleClick} />

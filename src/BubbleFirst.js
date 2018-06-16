@@ -28,7 +28,6 @@ let x6 = 250 - x3temp;
 let y6 = 250 + y3temp;
 
 
-
 class BubbleFirst extends Component {
 
   render () {

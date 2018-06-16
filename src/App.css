@@ -22,8 +22,10 @@
   display: inline-block;
   border-radius: 60px;
   border: 2px solid #ededed;
-  padding: 15px 18px 15px 18px;
+  padding: 15px 17px 15px 17px;
   transition: 0.7s; }
-  .fa:hover {
-    border: 2px solid #b6a9f2;
-    color: #b6a9f2; }
+
+.time {
+  font-family: "arial";
+  font-size: 24px;
+  color: white; }
