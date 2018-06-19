@@ -32,7 +32,7 @@ class BubbleFirst extends Component {
 
   render () {
     return (
-      <div className="svgContainer">
+      <div className="svgContainerFirst">
         <svg height="500" width="500">
           <path className="firstGrow" d={`M${x1},${y1} A130,130 0 0,1 ${x2},${y2}`}
             fill="none" stroke="rgb(237, 237, 237)" strokeWidth="3" />

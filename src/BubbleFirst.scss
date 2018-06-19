@@ -1,11 +1,12 @@
 :root {
-  --ani-duration: 20s;
+  --ani-duration: 10s;
   --ani-play: running;
 }
 
-.svgContainer {
+.svgContainerFirst {
   height: 500px;
   width: 500px;
+  visibility: hidden;
 }
 
 .firstOrbit {

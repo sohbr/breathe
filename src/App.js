@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Button from './Button';
 import Stopwatch from './Stopwatch';
-import BubbleFirst from './BubbleFirst.js';
-import BubbleSecond from './BubbleSecond.js';
-import BubbleThird from './BubbleThird.js';
+
+import BubbleCarousel from './BubbleCarousel';
+import BubbleFirst from './BubbleFirst';
+import BubbleSecond from './BubbleSecond';
+import BubbleThird from './BubbleThird';
 import FontAwesome from 'react-fontawesome';
 import './App.css';
 
@@ -16,11 +18,11 @@ class App extends Component {
       fontawesome: "fa-pause"
     };
 
-    this.handleClick = this.handleClick.bind(this);
+    this.handlePlay = this.handlePlay.bind(this);
   }
 
 
-  handleClick(e) {
+  handlePlay(e) {
     e.preventDefault();
     if (this.state.playstate === "running") {
       this.setState({ playstate: "paused", fontawesome: "fa-play" });
@@ -35,9 +37,11 @@ class App extends Component {
       <div className="App">
         <div className="background-image" />
         <Stopwatch playstate={this.state.playstate}/>
-        <BubbleFirst playstate={this.state.playstate} />
+        <div className="bubblesContainer">
+          <BubbleCarousel playstate={this.state.playstate} />
+        </div>
         <FontAwesome className={this.state.fontawesome} size='2x'
-          onClick={this.handleClick} />
+          onClick={this.handlePlay} />
 
       </div>
     );
