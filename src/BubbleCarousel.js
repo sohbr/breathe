@@ -20,6 +20,27 @@ class BubbleCarousel extends Component {
     this.nextBubble = this.nextBubble.bind(this);
   }
 
+  previousBubble(e) {
+    e.preventDefault();
+    const { currentBubbleIndex } = this.state;
+    const shouldResetIndex = currentBubbleIndex === 0;
+    const index = shouldResetIndex ? 2 : currentBubbleIndex - 1;
+
+    this.setState({
+      currentBubbleIndex: index
+    });
+  }
+
+  nextBubble(e) {
+    e.preventDefault();
+    const { currentBubbleIndex } = this.state;
+    const shouldResetIndex = currentBubbleIndex === 2;
+    const index = shouldResetIndex ? 0 : currentBubbleIndex + 1;
+
+    this.setState({
+      currentBubbleIndex: index
+    });
+  }
 
   render() {
     return (
